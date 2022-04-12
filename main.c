@@ -1,10 +1,13 @@
 #include <stdio.h>
 
-int main(void)
+void hello_world(void)
 {
     printf("Hello world!\n");
+}
 
-    printf("This is a test program.\n");
-
+int main(void)
+{
+    hello_world();
+    
     return 0;
 }
