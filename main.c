@@ -1,10 +1,18 @@
 #include <stdio.h>
 
-int main(void)
+void hello_world(void)
 {
     printf("Hello world!\n");
+}
 
-    printf("This is a test program.\n");
+void greet(const char* const name)
+{
+    printf("Hello, %s!\n", name);
+}
 
+int main(int argc, char* argv[])
+{
+    hello_world();
+    greet(argv[1]);
     return 0;
 }
